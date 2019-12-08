@@ -1,0 +1,39 @@
+# BEGIN REMOVE SLUG CUSTOM POST TYPE RULES
+#RewriteRule ^post_staff/(.+)/$ /$1 [R=301,L]
+#RewriteRule ^post_sponsor/(.+)/$ /$1 [R=301,L]
+#RewriteRule ^post_shedules/(.+)/$ /$1 [R=301,L]
+#RewriteRule ^post_gallery/(.+)/$ /$1 [R=301,L]
+#RewriteRule ^post_testimonials/(.+)/$ /$1 [R=301,L]
+#RewriteRule ^post_tickets/(.+)/$ /$1 [R=301,L]
+#RewriteRule ^post_pledges/(.+)/$ /$1 [R=301,L]
+# END REMOVE SLUG CUSTOM POST TYPE RULES
+
+#<IfModule mod_rewrite.c>
+#RewriteEngine On
+#RewriteBase /
+#RewriteRule ^index\.php$ - [L]
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule . /index.php [L]
+#
+#</IfModule>
+
+#Redirect 301 /speakers/investors2015/ /investors-2015/
+
+#AddHandler x-mapp-php5.5  .php
+
+<IfModule !mod_php5.c>
+    AddType x-mapp-php5.5 .php
+</IfModule>
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
