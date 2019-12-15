@@ -1,0 +1,175 @@
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">Message from Jourday.com</h4>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<header>
+
+    <div class="header-image"
+         style="background-image: url(&quot;/wp-content/themes/jourday/imgs/headerCarousel/3.jpg&quot;);">
+        <img class="slideConrtol left" src="https://jourday.com/wp-content/themes/jourday/imgs/arr_slider-left.png"
+             onclick="pervSlide()">
+        <img class="slideConrtol right" src="https://jourday.com/wp-content/themes/jourday/imgs/arr_slider-right.png"
+             onclick="nextSlide()">
+        <div class="container-fluid header-top">
+            <div class="row">
+                <div class="col-xs-4">
+                    <div class="logo-wrapper">
+                        <a href="/front-home"><img
+                                src="https://jourday.com/wp-content/uploads/2016/11/footer-logo2.png"
+                                alt="Jourday.com Logo"></a>
+                    </div>
+                </div>
+                <div class="col-xs-7 hidden-xs">
+                    <nav>
+                        <ul id="primary-menu" class="menu">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3096">
+                                <a href="javascript:void 0" id="sign_in_link" class="hidden">Sign In</a>
+                            <
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3096">
+                                <a href="javascript:void 0" id="sign_out_link" class="hidden">Sign Out</a>
+                            </li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3013">
+                                <a href="javascript:void 0">EUR (€)</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2275">
+                                        <a href="javascript:void 0">EUR (€)</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2276">
+                                        <a href="javascript:void 0">GBP (£)</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2277">
+                                        <a href="javascript:void 0">USD ($)</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2278">
+                                        <a href="javascript:void 0">CAD ($)</a>
+                                    </li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2279">
+                                        <a href="javascript:void 0">AUD ($)</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type
+                              menu-item-object-page current-menu-item page_item page-item-212
+                              current_page_item menu-item-214 hdn unvisible">
+                                <a href="javascript:void 0" id="backpack_page">My Backpack (<span
+                                        id="backpack_link">0</span>)</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-198 hdn unvisible">
+                                <a href="javascript:void 0" id="profile_page">Traveller Profile</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2168 hdn unvisible">
+                                <a href="https://jourday.com/blog/">Travel Tips</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-201 hdn unvisible">
+                                <a href="https://jourday.com/holiday-offers-about-jourday/">About Us</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-190 hdn unvisible">
+                                <a href="https://jourday.com/top-travel-destinations/">Contact Us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <script>
+
+                </script>
+                <div class="col-xs-1 hidden-xs">
+                    <div id="nav-icon1">
+                        <span class="first"></span>
+                        <span class="second"></span>
+                        <span class="third"></span>
+                    </div>
+                </div>
+                <div class="col-xs-8 hidden-sm hidden-md hidden-lg">
+                    <nav>
+                        <div class="fright">
+                            <i class="fa fa-bars"></i>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-middle">
+            <div class="container" id="header_container"></div>
+        </div>
+        <div class="container">
+            <div class="header-additional-container"></div>
+        </div>
+    </div>
+</header>
+<script>
+    var front_header_func = function () {
+        var currency = 'EUR (€)';
+        $.each($('.menu-item-has-children'), function () {
+            if ($(this).children('a').text() === 'Currency' || $(this).children('a').text() === 'CURRENCY')
+                $(this).children('a').text(currency)
+        });
+        var sign_in = document.getElementById('sign_in_link');
+        var sign_out = document.getElementById('sign_out_link');
+        if (front_auth.authorized()) {
+            if (sign_in)
+                sign_in.classList.add('hidden');
+            if (sign_out)
+                sign_out.classList.remove('hidden');
+        } else {
+            if (sign_in)
+                sign_in.classList.remove('hidden');
+            if (sign_out)
+                sign_out.classList.add('hidden');
+        }
+        if (sign_in) {
+            sign_in.addEventListener('click', function (ev) {
+                window.location.href = front_sign_in_url
+            });
+        }
+        if (sign_out) {
+            sign_out.addEventListener('click', function (ev) {
+                ev.stopPropagation();
+                front_auth.remove_cookies();
+                localStorage.removeItem('front_user');
+                window.location.reload();
+            })
+        }
+        var profile_page = document.getElementById('profile_page');
+        if (profile_page) {
+            profile_page.addEventListener('click', function (ev) {
+                ev.stopPropagation();
+                window.location.href = front_profile_url;
+            })
+        }
+
+        var backpack_page = document.getElementById('backpack_page');
+        if (backpack_page) {
+            backpack_page.addEventListener('click', function (ev) {
+                ev.stopPropagation();
+                window.location.href = front_backpack_url;
+            })
+        }
+        var backpack = localStorage.getItem('backpack');
+        if (backpack !== '') {
+            backpack = JSON.parse(backpack);
+        }
+
+        var backpack_link = document.getElementById('backpack_link');
+        if (backpack_link) {
+            if (backpack)
+                backpack_link.textContent = backpack.length.toString();
+        }
+    };
+    front_header_func();
+</script>

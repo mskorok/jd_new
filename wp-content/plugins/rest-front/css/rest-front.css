@@ -1,0 +1,244 @@
+.jourday {
+    color: #008000;
+}
+
+.partner {
+    color: #a8a8a8;
+}
+
+.header-additional-container {
+    height: 200px;
+    width: 100%;
+}
+
+@import url(//fonts.googleapis.com/css?family=Lato:700);
+
+.m-t-1 {
+    margin-top: 1rem;
+}
+
+.m-t-3 {
+    margin-top: 3rem;
+}
+
+.m-t-10 {
+    margin-top: 10rem;
+}
+
+.m-b-1 {
+    margin-bottom: 1rem;
+}
+
+.m-b-3 {
+    margin-bottom: 3rem;
+}
+
+.m-b-4 {
+    margin-bottom: 4rem;
+}
+
+.m-b-6 {
+    margin-bottom: 6rem;
+}
+
+.m-l-1 {
+    margin-left: 1rem;
+}
+
+.m-l-3 {
+    margin-left: 3rem;
+}
+
+.h-5 {
+    height: 5rem;
+}
+
+.h-3 {
+    height: 3rem;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.jd-f-r {
+    float: right;
+}
+
+.bc-red {
+    background-color: red;
+}
+
+.jd-red {
+    color: red;
+}
+
+.b-r-5 {
+    border-radius: 5px;
+}
+
+.b-r-10 {
+    border-radius: 10px !important;
+}
+
+.jd-block {
+    display: block;
+}
+
+.jd-pointer {
+    cursor: pointer;
+}
+
+.jd-f-left {
+    float: left;
+}
+
+.jd-f-right {
+    float: right;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.left-hr {
+    float: left;
+    width: 35%;
+    margin-right: 2rem;
+}
+
+.right-hr {
+    float: right;
+    width: 35%;
+    margin-left: 2rem;
+}
+
+.g-recaptcha{
+    display: inline-block;
+}
+.g-recaptcha iframe{
+    margin-bottom: 0;
+}
+
+.login-wrap {
+    color: #404040;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.sign-in-button {
+    text-align: center;
+    padding: 10px 40px;
+    border: none;
+    box-shadow: none;
+    border-radius: 20px;
+    margin: 0 auto;
+    max-width: 250px !important;
+    margin-bottom: 20px !important;
+    float: none !important;
+    background-color: #f46450;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    -webkit-appearance: button;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+
+.sign-up-link {
+    font-family: 'Avenir-Light', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #337ab7;
+}
+
+.button-container {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.social-login {
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: 'Avenir-Light', sans-serif;
+    text-align: left;
+    font-weight: 700;
+    color: #FFFFFF !important;
+    text-decoration: none;
+    padding: 4px 10px 4px 4px;
+    margin-bottom: 5px;
+    min-width: 250px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.fb-login {
+    background-color: #3b5998 !important;
+}
+
+.google-login {
+    background-color: #dc4e41 !important;
+}
+
+.email-login {
+    background-color: #f02a0e !important;
+}
+
+.social-icon-facebook:before {
+    content: '\f09a';
+    color: #FFFFFF;
+    font-size: 20px;
+}
+.social-icon-google-plus:before {
+    content: '\f0d5';
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.social-text {
+    display: inline-block;
+    border-radius: 2px;
+    font-size: 14px;
+}
+
+.adventure .card-content:hover {
+    background-image: url("https://jourday.com/wp-content/themes/jourday/imgs/categoryCards/adventure.jpg");
+}
+
+.cultural .card-content:hover {
+    background-image: url("https://jourday.com/wp-content/themes/jourday/imgs/categoryCards/culture.jpg");
+}
+
+.nature .card-content:hover {
+    background-image: url("https://jourday.com/wp-content/themes/jourday/imgs/categoryCards/nature.jpg");
+}
+
+.billing-form input {
+    width: 100%;
+}
+
+.billing-form select {
+    padding: 10px;
+    color: #ADADB8;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    height: 60px;
+    width: 100%;
+}
+
+.billing-form input[type='checkbox'] {
+    width: 2% !important;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 4px 0 0;
+    line-height: normal;
+    color: #404040;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}

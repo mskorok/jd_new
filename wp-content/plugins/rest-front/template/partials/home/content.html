@@ -1,0 +1,274 @@
+<div class="site-content">
+    <div class="wrap-infographics col-xs-12 p0">
+        <div class="col-lg-12 col-md-12 col-md-offset-0 p0" id="infographics">
+            <div class="infografic col-lg-3 col-sm-6 first-info active" data-class="first-info">
+                <div class="circle col-md-3">
+                    <img src="https://jourday.com/wp-content/themes/jourday/imgs/infographics/1.png" alt="">
+                </div>
+                <div class="description col-md-8">
+                    PASSION
+                    <h5 class="sub-description">
+                        For Travel, Adventure, Destination and it’s people
+                    </h5>
+                </div>
+            </div>
+            <div class="infografic col-lg-3 col-sm-6 second-info" data-class="second-info">
+                <div class="circle col-md-3">
+                    <img src="https://jourday.com/wp-content/themes/jourday/imgs/infographics/2.png" alt="">
+                </div>
+                <div class="description col-md-8 p0">
+                    LEARN, EXPLORE, EXPERIENCE
+                    <h5 class="sub-description">
+                        Customized Journeys. Instant Bookings
+                    </h5>
+                </div>
+            </div>
+            <div class="infografic col-lg-3 col-sm-6 third-info" data-class="third-info">
+                <div class="circle col-md-3">
+                    <img src="https://jourday.com/wp-content/themes/jourday/imgs/infographics/3.png" alt="">
+                </div>
+                <div class="description col-md-8">
+                    TRUST <h5 class="sub-description">
+                    Booking Confidence. Member of Travel Trust </h5>
+                </div>
+            </div>
+            <div class="infografic col-lg-3 col-sm-6 fourth-info" data-class="fourth-info">
+                <div class="circle col-md-3">
+                    <img src="https://jourday.com/wp-content/themes/jourday/imgs/infographics/4.png" alt="">
+                </div>
+                <div class="description col-md-8">
+                    RESPONSIBLE AND SUSTAINABLE JOURNEYS <h5 class="sub-description">
+                    Giving Back to Local Communities. Small Groups </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        jQuery(document).ready(function ($) {
+            var header = $('header');
+            var wH = window.innerHeight;
+            var hH = header.height();
+            console.log(wH);
+            console.log(hH);
+            // if(wH>hH){
+            var newH = wH - $('.wrap-infographics').height();
+            if (newH < hH && window.innerWidth > 767) {
+                if (newH < 501) {
+                    $('.home .header-middle').css('margin-top', '0');
+                }
+                if (newH < 420) newH = 420;
+                header.height(newH);
+                $('.header-image').height(newH);
+            }
+            // }
+        });
+    </script>
+    <div id="pl-2" class="panel-layout col-xs-12">
+        <div id="pg-2-0" class="panel-grid panel-has-style">
+            <div class="panel-row-style panel-row-style-for-2-0">
+                <div id="pgc-2-0-0" class="panel-grid-cell">
+                    <div id="panel-2-0-0-0" class="so-panel widget widget_section-widget panel-first-child"
+                         data-index="0">
+                        <div class="home-scroller panel-widget-style panel-widget-style-for-2-0-0-0">
+                            <div class="so-widget-section-widget so-widget-section-widget-base">
+                                <span class="section-title fittext">What is JOURDAY</span>
+                                <br>
+                                <span class="section-subtitle">and why choose us?</span>
+                                <div class="home-scroller-content">
+                                    <p>
+                                        <span class="strong">Jourday </span>is your place
+                                        for planning an inspiring journey. Discover and Book your Travel Bites in
+                                        Greece.
+                                    </p>
+
+                                    <p>
+                                        A <span class="strong"> Travel Bite</span> is a destination experience.
+                                    </p>
+                                    <a class="orange-btn" href="/travel-ideas/"> More Info </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="panel-2-0-0-1" class="so-panel widget widget_section-widget panel-last-child"
+                         data-index="1">
+                        <div class="home-destinations mbot30 panel-widget-style panel-widget-style-for-2-0-0-1">
+                            <div class="so-widget-section-widget so-widget-section-widget-base"><span
+                                    class="section-title fittext">Popular Destinations</span>
+                                <br>
+                                <span class="section-subtitle">Check out our Best Sellers</span>
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="home-destination col-lg-4"
+                                             style="background-image: url(https://jourday.com/wp-content/uploads/2017/03/shutterstock_352224584-1.jpg)">
+                                            <a href="/front-product-list/?city=4"
+                                               class="home-destination-content">
+                                                <div class="home-destination-counter" id="agios-nikolaos">0</div>
+                                                <span class="home-destination-title">Agios-Nikolaos</span>
+                                                <br>
+                                                <span class="home-destination-location">Greece</span>
+                                            </a>
+                                        </div>
+                                        <div class="home-destination col-lg-4"
+                                             style="background-image: url(https://jourday.com/wp-content/uploads/2017/04/shutterstock_15895957-Large.jpg)">
+                                            <a href="/front-product-list/?city=5"
+                                               class="home-destination-content">
+                                                <div class="home-destination-counter" id="athens"> 0</div>
+                                                <span class="home-destination-title">Athens</span>
+                                                <br>
+                                                <span class="home-destination-location">Greece</span>
+                                            </a>
+                                        </div>
+                                        <div class="home-destination col-lg-4"
+                                             style="background-image: url(https://jourday.com/wp-content/uploads/2016/11/Ouranoupolis_tower_wikipedia.jpg)">
+                                            <a href="/front-product-list/?city=6"
+                                               class="home-destination-content">
+                                                <div class="home-destination-counter" id="chalkidiki"> 0</div>
+                                                <span class="home-destination-title">Chalkidiki</span>
+                                                <br>
+                                                <span class="home-destination-location">Greece</span>
+                                            </a>
+                                        </div>
+                                        <div class="home-destination col-lg-4"
+                                             style="background-image: url(https://jourday.com/wp-content/uploads/2017/04/chania.jpg)">
+                                            <a href="/front-product-list/?city=7"
+                                               class="home-destination-content">
+                                                <div class="home-destination-counter" id="chania"> 0</div>
+                                                <span class="home-destination-title">Chania</span>
+                                                <br>
+                                                <span class="home-destination-location">Greece</span>
+                                            </a>
+                                        </div>
+                                        <div class="home-destination-content-middle col-lg-4">
+                                            Best Selling Destinations
+                                        </div>
+                                        <div class="home-destination col-lg-4"
+                                             style="background-image: url(https://jourday.com/wp-content/uploads/2017/03/shutterstock_527031595-1-2.jpg)">
+                                            <a href="/front-product-list/?city=8"
+                                               class="home-destination-content">
+                                                <div class="home-destination-counter" id="heraklion"> 0</div>
+                                                <span class="home-destination-title">Heraklion</span>
+                                                <br>
+                                                <span class="home-destination-location">Greece</span>
+                                            </a>
+                                        </div>
+                                        <div class="home-destination col-lg-4"
+                                             style="background-image: url(https://jourday.com/wp-content/uploads/2016/12/shutterstock_Ioannina_191516078-Large.jpg)">
+                                            <a href="/front-product-list/?city=9"
+                                               class="home-destination-content">
+                                                <div class="home-destination-counter" id="ioannina"> 0</div>
+                                                <span class="home-destination-title">Ioannina</span>
+                                                <br>
+                                                <span class="home-destination-location">Greece</span></a>
+                                        </div>
+                                        <div class="home-destination col-lg-4"
+                                             style="background-image: url(https://jourday.com/wp-content/uploads/2016/12/shutterstock_Karpenisi_344596748-Large.jpg)">
+                                            <a href="/front-product-list/?city=10"
+                                               class="home-destination-content">
+                                                <div class="home-destination-counter" id="karpenisi"> 0</div>
+                                                <span class="home-destination-title">Karpenisi</span>
+                                                <br>
+                                                <span class="home-destination-location">Greece</span>
+                                            </a>
+                                        </div>
+                                        <div class="home-destination col-lg-4"
+                                             style="background-image: url(https://jourday.com/wp-content/uploads/2016/12/shutterstock_meteora_372325087-Large.jpg)">
+                                            <a href="/front-product-list/?city=11"
+                                               class="home-destination-content">
+                                                <div class="home-destination-counter" id="meteora"> 0</div>
+                                                <span class="home-destination-title">Meteora</span>
+                                                <br>
+                                                <span class="home-destination-location">Greece</span>
+                                            </a>
+                                        </div>
+                                        <div class="home-destination col-lg-4"
+                                             style="background-image: url(https://jourday.com/wp-content/uploads/2017/04/santorini.jpg)">
+                                            <a href="/front-product-list/?city=12"
+                                               class="home-destination-content">
+                                                <div class="home-destination-counter" id="santorini"> 0</div>
+                                                <span class="home-destination-title">Santorini</span>
+                                                <br>
+                                                <span class="home-destination-location">Greece</span>
+                                            </a>
+                                        </div>
+                                        <div class="home-destination col-lg-4"
+                                             style="background-image: url(https://jourday.com/wp-content/uploads/2017/04/thessaloniki.jpg)">
+                                            <a href="/front-product-list/?city=13"
+                                               class="home-destination-content">
+                                                <div class="home-destination-counter" id="thessaloniki"> 0</div>
+                                                <span class="home-destination-title">Thessaloniki</span>
+                                                <br>
+                                                <span class="home-destination-location">Greece</span>
+                                            </a>
+                                        </div>
+                                        <div class="home-destination col-lg-4"
+                                             style="background-image: url(https://jourday.com/wp-content/uploads/2016/06/GR-vikos-br-2.jpg)">
+                                            <a href="/front-product-list/?place=zagorochoria"
+                                               class="home-destination-content">
+                                                <div class="home-destination-counter" id="zagorochoria"> 0</div>
+                                                <span class="home-destination-title">Zagorochoria</span>
+                                                <br>
+                                                <span class="home-destination-location">Greece</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="categoryCard" class="col-xs-12">
+        <div class="hack" style="display: none">
+            <img src="https://jourday.com/wp-content/themes/jourday/imgs/categoryCards/adventure.jpg" alt="">
+            <img src="https://jourday.com/wp-content/themes/jourday/imgs/categoryCards/culture.jpg" alt="">
+            <img src="https://jourday.com/wp-content/themes/jourday/imgs/categoryCards/nature.jpg" alt="">
+        </div>
+        <span class="section-title fittext">Journey Styles</span>
+        <br>
+        <span class="section-subtitle">Explore and Experience</span>
+        <div class="cards col-lg-10 col-lg-offset-1 col-md-12 col-md-offset-0">
+            <div class="card col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3 adventure">
+                <a href="/front-product-list/?country=6&amp;category=3&amp;operated=&amp;onOffer=">
+                    <div class="card-content col-lg-10 col-lg-offset-1 col-xs-12">
+                        <img src="https://jourday.com/wp-content/themes/jourday/imgs/categoryCards/adventure_pictogram.png"
+                             alt="">
+                        <div class="col-xs-12">Adventures</div>
+                        <div class="description col-xs-12">
+                            Active adventures get your closer to the destination by letting you like, bike and
+                            multi-sport your way throught it.
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3 cultural">
+                <a href="/front-product-list/?country=6&amp;category=2,5,6,8&amp;operated=&amp;onOffer=">
+                    <div class="card-content col-lg-10 col-lg-offset-1 col-xs-12">
+                        <img src="https://jourday.com/wp-content/themes/jourday/imgs/categoryCards/cultural_pictogram.png"
+                             alt="">
+                        <div class="col-xs-12">Cultural</div>
+                        <div class="description col-xs-12">
+                            Experience the history, the tradition and the way of living of the local communities. Make
+                            new friends of the way.
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3 nature">
+                <a href="/front-product-list/?country=6&amp;category=10&amp;operated=&amp;onOffer=">
+                    <div class="card-content col-lg-10 col-lg-offset-1 col-xs-12">
+                        <img src="https://jourday.com/wp-content/themes/jourday/imgs/categoryCards/nature_pictogram.png"
+                             alt="">
+                        <div class="col-xs-12">Sailing</div>
+                        <div class="description col-xs-12">
+                            Sail and explore with these timeless Sea Adventures. Discover the natural charm and beauty
+                            of the Greek Islands. Live the myth first-hand
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
